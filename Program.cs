@@ -1,3 +1,8 @@
+/*
+ * Authors: Christopher Waschke, Jackson Jenks, Brody Weinkauf
+ * Assignment: Week 11 - Sorting Algorithms
+ * Description: The UI/Test for our sorting algorithms.
+ */
 using System;
 
 namespace algorithms;

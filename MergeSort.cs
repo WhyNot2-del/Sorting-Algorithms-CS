@@ -1,7 +1,19 @@
+/*
+ * Authors: Christopher Waschke, Jackson Jenks, Brody Weinkauf
+ * Assignment: Week 11 - Sorting Algorithms
+ * Description: This file contains a Merge Sort Algorithm.
+ * 
+ * Citation: "Learn Merge Sort in 13 Minutes (Knife Emoji)" - Bro code (https://www.youtube.com/watch?v=3j0SWDX4AtU)
+ */
 using System;
 
 namespace algorithms;
 
+
+/*
+ * Utility Class MergeSortUtil
+ * Provides the utility method MergeSort to sort Arrays of comparable values.
+ */
 public static class MergeSortUtil {
 
 
