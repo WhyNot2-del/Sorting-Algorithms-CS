@@ -7,7 +7,7 @@ public class QuickSort
     //  quickSort algorithm for sorting items
     public static void quickSort<T>(T[] data, int begin, int end) where T : IComparable
     {
-        //  base case for recursion, if there is only one or two items being sorted
+        //  base case for recursion, if there is only one or zero items being sorted
         if (begin < end)
         {
             //  breaks down the data into two smaller arrays
