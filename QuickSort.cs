@@ -19,7 +19,7 @@ public class QuickSort
         }
     }
 
-    //  breaks down the data into smaller two arrays
+    //  breaks down the data into two smaller arrays
     private static int Partition<T>(T[] data, int begin, int end) where T : IComparable
     {
         T pivot = data[end];
