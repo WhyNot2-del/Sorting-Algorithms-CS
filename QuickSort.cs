@@ -14,8 +14,8 @@ public class QuickSort
             int partitionIndex = Partition(data, begin, end);
 
             //  sorts the two broken down arrays
-            quickSort(data, begin, partitionIndex - 1);
-            quickSort(data, partitionIndex + 1, end);
+            quickSort(data, begin, partitionIndex - 1); //  swaps smaller items
+            quickSort(data, partitionIndex + 1, end); //  swaps bigger items
         }
     }
 
