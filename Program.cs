@@ -3,6 +3,7 @@
  * Assignment: Week 11 - Sorting Algorithms
  * Description: The UI/Test for our sorting algorithms.
  */
+using Sorting_Algorithms_CS;
 using System;
 
 namespace algorithms;
@@ -16,7 +17,7 @@ public class ConsoleApp {
     public static string Menu(){
         Console.WriteLine("m.) Merge Sort");
         Console.WriteLine("q.) Quick Sort");
-        Console.WriteLine("s.) Shell Sort");
+        Console.WriteLine("s.) Selection Sort");
         Console.WriteLine("x.) Exit");
         Console.Write("Please select an option> ");
         return Console.ReadLine().ToLower();
@@ -95,11 +96,21 @@ public class ConsoleApp {
 
     /*
      * Static void Method
-     * Gets an array of integers from the user, does the shell sort on them
+     * Gets an array of integers from the user, does the Selection Sort on them
      * And then prints out the sorted array.
      */
-    public static void DoShell(){
-        Console.WriteLine("Not implemented yet.");
+    public static void DoSelection(){
+        int[] arr;
+        try
+        {
+            arr = getUserInts();
+        }
+        catch (ArgumentException)
+        {
+            return;
+        }
+        SelectionSort.selectionSort(arr);
+        Console.WriteLine(ArrayToString(arr));
     }
 
     /*
@@ -119,7 +130,7 @@ public class ConsoleApp {
                     DoQuick();
                     break;
                 case "s":
-                    DoShell();
+                    DoSelection();
                     break;
                 case "x":
                     running = false;
